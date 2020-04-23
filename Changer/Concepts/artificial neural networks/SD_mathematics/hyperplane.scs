@@ -1,43 +1,43 @@
 hyperplane<-sc_node_not_relation;;
 
-hyperplane=>nrel_main_idtf:
+hyperplane=>concepts_main_idtf:
 [гиперплоскость](*<-lang_ru;;*);
 [hyperplane](*<-lang_en;;*);;
-hyperplane=>nrel_idtf:
+hyperplane=>concepts_idtf:
 [подпространство](*<-lang_ru;;*);;
 
 
-nrel_inclusion->(math_concept=>hyperplane);;
+concepts_inclusion->(math_concepts=>hyperplane);;
 
 hyperplane<- rrel_key_sc_element: ...
 (*
 <- definition;;
-=> nrel_main_idtf:
+=> concepts_main_idtf:
       [Опр. (гиперплоскость)] (* <- lang_ru;; *);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 	{
 		subspase;
 		space;
-		nrel_embrace
+		concepts_embrace
 	};; 
-<= nrel_sc_text_translation: ... 
+<= concepts_sc_text_translation: ... 
 		(*
 			->rrel_example:
-			[Гиперплоскость - это <b><sc_element sys_idtf="subspase">подпространство</b> с размерностью, на единицу меньшей, чем объемлющее <b><sc_element sys_idtf="space">пространство</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+			[Гиперплоскость - это <b><sc_element sys_idtf="subspase">подпространство</b> с размерностью, на единицу меньшей, чем объемлющее <b><sc_element sys_idtf="space">пространство</b>.](*<- lang_ru;; =>concepts_format: format_html;;*);;
 		*);;
 *);;
 
 
 hyperplane<- rrel_key_sc_element: ... 
 (*
- => nrel_main_idtf:
+ => concepts_main_idtf:
 [Утв. 1 о гиперплоскость] (* <- lang_ru;; *);;
- <= nrel_sc_text_translation: ...
+ <= concepts_sc_text_translation: ...
 	 (*
     	  -> rrel_example:
-		[Для <b><sc_element sys_idtf="two_dimensional_space">двумерного пространства</b> гиперплоскость это <b><sc_element sys_idtf="straight">прямая</b>.](*<-lang_ru;; =>nrel_format: format_html;;*);;
+		[Для <b><sc_element sys_idtf="two_dimensional_space">двумерного пространства</b> гиперплоскость это <b><sc_element sys_idtf="straight">прямая</b>.](*<-lang_ru;; =>concepts_format: format_html;;*);;
 	*);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 {
 straight;
 two_dimensional_space
@@ -49,9 +49,11 @@ hyperplane-> rrel_example:
 hyperplane->x;;
 straight->x;;
 space->x;;
-two_dimensional_space=>nrel_embrace:straight;;
+two_dimensional_space=>concepts_embrace:straight;;
 space->two_dimensional_space;;
 *];;
+
+
 
 
 

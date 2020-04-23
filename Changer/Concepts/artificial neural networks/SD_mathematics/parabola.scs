@@ -5,14 +5,14 @@ sc_node_not_relation->focus;;
 sc_node_not_relation->parabola_x;;
 sc_node_not_relation->function;;
 
-parabola=> nrel_main_idtf: [парабола](* <- lang_ru;; *);;
-parabola=> nrel_main_idtf: [parabola](* <- lang_en;; *);;
+parabola=> concepts_main_idtf: [парабола](* <- lang_ru;; *);;
+parabola=> concepts_main_idtf: [parabola](* <- lang_en;; *);;
 definition ->...
 (*
 ->rrel_key_sc_element: parabola;;
-<= nrel_sc_text_translation: ...(*->rrel_example:[Парабола -  геометрическое место точек плоскости, равноудаленных от заданной точки F](*<-lang_ru;;*);;*);;
-=> nrel_main_idtf: [Определение (парабола)](*<- lang_ru;;*);;
-=> nrel_using_constants:
+<= concepts_sc_text_translation: ...(*->rrel_example:[Парабола -  геометрическое место точек плоскости, равноудаленных от заданной точки F](*<-lang_ru;;*);;*);;
+=> concepts_main_idtf: [Определение (парабола)](*<- lang_ru;;*);;
+=> concepts_using_constants:
 { 
 geometrical_place;
 point
@@ -22,16 +22,18 @@ point
 statement ->...
 (*
 ->rrel_key_sc_element: parabola;;
-<= nrel_sc_text_translation: ...(*->rrel_example:[Точка F называется фокусом параболы.](*<-lang_ru;;*);;*);;
-=> nrel_main_idtf: [Утверждение(парабола)](*<- lang_ru;;*);;
-=> nrel_using_constants:
+<= concepts_sc_text_translation: ...(*->rrel_example:[Точка F называется фокусом параболы.](*<-lang_ru;;*);;*);;
+=> concepts_main_idtf: [Утверждение(парабола)](*<- lang_ru;;*);;
+=> concepts_using_constants:
 {
 point;
 focus
 };;
 *);;
 parabola_x<-rrel_example:parabola;;
-parabola=>nrel_inclusion:function;;
+parabola=>concepts_inclusion:function;;
+
+
 
 
 

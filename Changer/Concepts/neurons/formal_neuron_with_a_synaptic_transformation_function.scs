@@ -1,5 +1,5 @@
 formal_neuron_with_a_synaptic_transformation_function
-=>nrel_main_idtf:
+=>concepts_main_idtf:
 	[формальный нейрон с синаптической функцией активации]
 	(* <- lang_ru;; *);
 	
@@ -8,7 +8,7 @@ formal_neuron_with_a_synaptic_transformation_function
 	Definition_of_formal_neuron_with_a_synaptic_transformation_function
 		(*
 			<-definition;;
-			<=nrel_sc_text_translation:...
+			<=concepts_sc_text_translation:...
 			(*
 				-> rrel_example:
 				[<p>				
@@ -17,33 +17,35 @@ formal_neuron_with_a_synaptic_transformation_function
 				</p>] 
 				(*
 				<-lang_ru;;
-				=> nrel_format: format_html;;
+				=> concepts_format: format_html;;
 				*);;
 			*);;
-		=>nrel_main_idtf:[Опр. (формальный нейрон c синаптической функцией активации)](* <-lang_ru;; => nrel_format: format_html;;*);;
-		<=nrel_using_constants:...
+		=>concepts_main_idtf:[Опр. (формальный нейрон c синаптической функцией активации)](* <-lang_ru;; => concepts_format: format_html;;*);;
+		<=concepts_using_constants:...
 			(*
 				->formal_neuron;synaptic_transformation_function;input_data;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	<=nrel_inclusion:formal_neuron;
-	<-rrel_explored_concept:subject_domain_of_artificial_neural_networks;
+	<=concepts_inclusion:formal_neuron;
+	<-rrel_explored_concepts:subject_domain_of_artificial_neural_networks;
 
 /////////////////////////////////////////////////////////////////////
 <- rrel_key_sc_element: statement_formal_neuron_with_a_synaptic_transformation_function
 (*
 	<- explanation;;
-	=> nrel_main_idtf: 
+	=> concepts_main_idtf: 
 		[Утв. (формальный нейрон с функцией активации,синаптическая функция  преобразования*,синаптическая функция преобразования)](*<- lang_ru;;*);;
-	<= nrel_sc_text_translation:...
+	<= concepts_sc_text_translation:...
 	(*
 		-> rrel_example:[Любой формальный нейрон с функцией активации имеет синаптическую функцию преобразования.] (*<- lang_ru;;*);;
 	*);;
 *);;
 statement_formal_neuron_with_a_synaptic_transformation_function
-->rrel_key_sc_element:nrel_synaptic_transformation_function;
+->rrel_key_sc_element:concepts_synaptic_transformation_function;
 ->rrel_key_sc_element:synaptic_transformation_function;;
+
+
 
 
 

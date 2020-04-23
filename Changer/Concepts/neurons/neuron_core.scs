@@ -1,24 +1,24 @@
 neuron_core
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [нейронное ядро] (* <- lang_ru;; *);
-	=> nrel_main_idtf: [neuron core] (* <- lang_en;; *);;
+	=> concepts_main_idtf: [нейронное ядро] (* <- lang_ru;; *);
+	=> concepts_main_idtf: [neuron core] (* <- lang_en;; *);;
 
 neuron_core
-	<= nrel_inclusion: concept_neuron_node;;
+	<= concepts_inclusion: concepts_neuron_node;;
 
 definition -> ...
 	(*
 		-> rrel_key_sc_element: neuron_core;;
 		
-		=> nrel_main_idtf: [Опр.(нейронное ядро)] (* <- lang_ru;; *);;
+		=> concepts_main_idtf: [Опр.(нейронное ядро)] (* <- lang_ru;; *);;
 
-		<= nrel_using_constants: ...
+		<= concepts_using_constants: ...
 			(*
-				-> concept_neuron_node;;
-				-> nrel_receptive_field;;
+				-> concepts_neuron_node;;
+				-> concepts_receptive_field;;
 			*);;
 
-		<= nrel_sc_text_translation: ...
+		<= concepts_sc_text_translation: ...
 			(*
 				-> [Нейронным ядром называется множество нейронных узлов, которые имеют общее рецепторное поле] (* <- lang_ru;; *);;
 			*);;
@@ -27,10 +27,12 @@ definition -> ...
 
 illustration -> rrel_example: ...
 (*
-	=> nrel_main_idtf: [Рис.(нейронное ядро)] (* <- lang_ru;; *);;
+	=> concepts_main_idtf: [Рис.(нейронное ядро)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: neuron_core;;
-	<= nrel_sc_text_translation: ... (* -> "file://neuron_core.png";; *);;
+	<= concepts_sc_text_translation: ... (* -> "file://neuron_core.png";; *);;
 *);;
+
+
 
 
 

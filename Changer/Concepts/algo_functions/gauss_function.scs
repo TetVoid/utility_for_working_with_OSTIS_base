@@ -1,23 +1,23 @@
 gauss_function<-sc_node_not_relation;;
 
-gauss_function=>nrel_main_idtf:
+gauss_function=>concepts_main_idtf:
 [функция Гаусса](*<-lang_ru;;*);
 [gauss function](*<-lang_en;;*);;
 
-nrel_inclusion->(function=>gauss_function);;
+concepts_inclusion->(function=>gauss_function);;
 
 gauss_function<- rrel_key_sc_element: ...
 (*
 <- definition;;
-=> nrel_main_idtf:
+=> concepts_main_idtf:
       [Опр. (функция Гаусса)] (* <- lang_ru;; *);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 	{
 		point;
 		geometric_figure;
 		ray
 	};; 
-<= nrel_sc_text_translation: ... 
+<= concepts_sc_text_translation: ... 
 		(*
 			->rrel_example:
 			[Функция Гаусса - вещественная функция, описываемая следующей формулой:
@@ -29,14 +29,14 @@ gauss_function<- rrel_key_sc_element: ...
 
 gauss_function<- rrel_key_sc_element: ... 
 (*
- => nrel_main_idtf:
+ => concepts_main_idtf:
 [Утв. 1 об функции Гаусса] (* <- lang_ru;; *);;
- <= nrel_sc_text_translation: ...
+ <= concepts_sc_text_translation: ...
 	 (*
     	  -> rrel_example:
 		[Введена Гауссом в 1809 году как функция плотности нормального распределения](*<-lang_ru;;*);;
 	*);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 {
 gauss;
 year;
@@ -54,6 +54,8 @@ triangle->a;;
 triangle->b;;
 triangle->c;;
 *];;
+
+
 
 
 

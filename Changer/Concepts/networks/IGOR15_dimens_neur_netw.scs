@@ -1,23 +1,23 @@
-dimensional_neural_network->nrel_idtf:[Понижающая размерность нейронная сеть](* <-lang_ru;; *);;
+dimensional_neural_network->concepts_idtf:[Понижающая размерность нейронная сеть](* <-lang_ru;; *);;
 definition -> ...
 	(*
-		=> nrel_main_idtf: [Опр.(понижающая размерность нейронная сеть)](* <- lang_ru;; *);;
-		<= nrel_sc_text_translation:...
+		=> concepts_main_idtf: [Опр.(понижающая размерность нейронная сеть)](* <- lang_ru;; *);;
+		<= concepts_sc_text_translation:...
 		(*
 			-> rrel_example: [Понижающая размерность нейронная сеть - класс многослойных нейронных сетей, который использует алгоритм обратного распространения ошибки и основывается на сжатии и восстановлении образов.](* <- lang_ru;; *);;
 		*);;
 		-> rrel_key_sc_element: dimensional_neural_network;;
-		<= nrel_using_constants :...
+		<= concepts_using_constants :...
 		(*
-			-> multilayer_neural_network; concept_neuron_node; nrel_be_more; compression; decompression; error_propagation_algorithm;;//алг обр распр ошибки(анжи)
+			-> multilayer_neural_network; concepts_neuron_node; concepts_be_more; compression; decompression; error_propagation_algorithm;;//алг обр распр ошибки(анжи)
 		*);;
 	*);; 
 
 statement -> ...
 	(*
          -> rrel_key_sc_element: dimensional_neural_network; pattern_recognition;;
-		=> nrel_main_idtf: [Утв.(распознавание образов)](* <- lang_ru;; *);;
-		<= nrel_sc_text_translation:...
+		=> concepts_main_idtf: [Утв.(распознавание образов)](* <- lang_ru;; *);;
+		<= concepts_sc_text_translation:...
 		(*
 			-> rrel_example: [Понижающие размерность нейронные сети используются для распознавания образов.](* <- lang_ru;; *);;
 		*);;
@@ -25,11 +25,13 @@ statement -> ...
 illustration -> ...
 	(*
          -> rrel_key_sc_element: dimensional_neural_network;;
-		=> nrel_main_idtf: [Рис.(понижающая размерность нейронная сеть)](* <- lang_ru;; *);;
-		<= nrel_sc_text_translation: ... (* -> "file://dim_neur_netw.png" ;; *);;
+		=> concepts_main_idtf: [Рис.(понижающая размерность нейронная сеть)](* <- lang_ru;; *);;
+		<= concepts_sc_text_translation: ... (* -> "file://dim_neur_netw.png" ;; *);;
   *);;
-dimensional_neural_network<-rrel_explored_concept: section_subject_domain_of_dimensional_neural_networks;;
+dimensional_neural_network<-rrel_explored_concepts: section_subject_domain_of_dimensional_neural_networks;;
 // done
+
+
 
 
 

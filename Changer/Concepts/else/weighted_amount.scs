@@ -1,42 +1,42 @@
 weighted_amount<-sc_node_not_relation;;
 
-weighted_amount=>nrel_main_idtf:
+weighted_amount=>concepts_main_idtf:
 [взвешенная сумма](*<-lang_ru;;*);
 [weighted amount](*<-lang_en;;*);;
 
 
-nrel_inclusion->(mathematical_operation=>weighted_amount);;
+concepts_inclusion->(mathematical_operation=>weighted_amount);;
 
 weighted_amount<- rrel_key_sc_element: ...
 (*
 <- definition;;
-=> nrel_main_idtf:
+=> concepts_main_idtf:
       [Опр. (взвешенная сумма)] (* <- lang_ru;; *);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 	{
-		nrel_sum_of_numbers;
-		nrel_multiplication_of_numbers;
+		concepts_sum_of_numbers;
+		concepts_multiplication_of_numbers;
 		raster;
 		weight
 	};; 
-<= nrel_sc_text_translation: ... 
+<= concepts_sc_text_translation: ... 
 		(*
 			->rrel_example:
-			[Взвешенная сумма - это наложение нескольких <b><sc_element sys_idtf="raster">растров</b> с <b><sc_element sys_idtf="nrel_multiplication_of_numbers">умножением</b> каждого на присвоенный им <b><sc_element sys_idtf="weight">вес</b> и общим <b><sc_element sys_idtf="nrel_sum_of_numbers">суммированием</b>.](*<- lang_ru;;=>nrel_format: format_html;;*);;
+			[Взвешенная сумма - это наложение нескольких <b><sc_element sys_idtf="raster">растров</b> с <b><sc_element sys_idtf="concepts_multiplication_of_numbers">умножением</b> каждого на присвоенный им <b><sc_element sys_idtf="weight">вес</b> и общим <b><sc_element sys_idtf="concepts_sum_of_numbers">суммированием</b>.](*<- lang_ru;;=>concepts_format: format_html;;*);;
 		*);;
 *);;
 
 
 weighted_amount<- rrel_key_sc_element: ... 
 (*
- => nrel_main_idtf:
+ => concepts_main_idtf:
 [Утв. 1 о взвешенная сумма] (* <- lang_ru;; *);;
- <= nrel_sc_text_translation: ...
+ <= concepts_sc_text_translation: ...
 	 (*
     	  -> rrel_example:
-		[<b><sc_element sys_idtf="weight_value">Значения весов</b> <b><sc_element sys_idtf="raster">растра</b> могут иметь как <b><sc_element sys_idtf="positive_value">положительное значение</b>, так и <b><sc_element sys_idtf="negative_value">отрицательное значение</b>.](*<-lang_ru;;=>nrel_format: format_html;;*);;
+		[<b><sc_element sys_idtf="weight_value">Значения весов</b> <b><sc_element sys_idtf="raster">растра</b> могут иметь как <b><sc_element sys_idtf="positive_value">положительное значение</b>, так и <b><sc_element sys_idtf="negative_value">отрицательное значение</b>.](*<-lang_ru;;=>concepts_format: format_html;;*);;
 	*);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 {
 weight_value;
 positive_value;
@@ -51,11 +51,11 @@ raster->A;;
 raster->B;;
 weighted_amont->...
 (*
-<=nrel_sum_of_numbers:
+<=concepts_sum_of_numbers:
 	{
 	...
 		(*
-		<=nrel_multiplication_of_numbers:
+		<=concepts_multiplication_of_numbers:
 			{
 			A;
 			...
@@ -66,7 +66,7 @@ weighted_amont->...
 		*);
 	...
 		(*
-		<=nrel_multiplication_of_numbers:
+		<=concepts_multiplication_of_numbers:
 			{
 			B;
 			...
@@ -78,6 +78,8 @@ weighted_amont->...
 	};;
 *);;
 *];;
+
+
 
 
 

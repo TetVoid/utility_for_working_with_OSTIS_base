@@ -50,7 +50,10 @@ int main()
 		{
 			string filenameStr = directorisName[i]+"\\";
 			filenameStr += p.path().filename().string();
-			filesName.push_back(filenameStr);
+			
+			if(p.path().extension().string()==".scs"|| p.path().extension().string() == ".scsi")
+				filesName.push_back(filenameStr);
+
 			//cout << filenameStr << endl;
 		}
 	}

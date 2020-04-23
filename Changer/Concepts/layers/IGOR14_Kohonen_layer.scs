@@ -1,32 +1,34 @@
-sc_node_norole_relation->Kohonen_nrel_layer;;
-Kohonen_nrel_layer->nrel_main_idtf:[Kohonen nrel_layer*](* <-lang_en;; *);;
-Kohonen_nrel_layer->nrel_main_idtf:[слой Кохонена*](* <-lang_ru;; *);;
+sc_node_norole_relation->Kohonen_concepts_layer;;
+Kohonen_concepts_layer->concepts_main_idtf:[Kohonen concepts_layer*](* <-lang_en;; *);;
+Kohonen_concepts_layer->concepts_main_idtf:[слой Кохонена*](* <-lang_ru;; *);;
  definition -> ...
 	(*
-		=> nrel_main_idtf: [Опр.(слой Кохонена*)](* <- lang_ru;; *);;
-		<= nrel_sc_text_translation:...
+		=> concepts_main_idtf: [Опр.(слой Кохонена*)](* <- lang_ru;; *);;
+		<= concepts_sc_text_translation:...
 		(*
 			-> rrel_example: [Слой Кохонена - слой нейронной сети Кохонена без нейронов смещения, где наибольший нейронный узел становится единичным, остальные обращаются в ноль.](* <- lang_ru;; *);;
 		*);;
-		-> rrel_key_sc_element: Kohonen_nrel_layer;;
-		<= nrel_using_constants :...
+		-> rrel_key_sc_element: Kohonen_concepts_layer;;
+		<= concepts_using_constants :...
 		(*
-			-> concept_context_neuron; nrel_layer; concept_neuron_node; self_organizing_neural_network; unique_existence;;
+			-> concepts_context_neuron; concepts_layer; concepts_neuron_node; self_organizing_neural_network; unique_existence;;
 		*);;
 	*);; 
-Kohonen_nrel_layer => nrel_first_domain: concept_neural_network_in_graphical_representation;;
-Kohonen_nrel_layer => nrel_second_domain: number;;
-Kohonen_nrel_layer => nrel_definitional_domain:...
+Kohonen_concepts_layer => concepts_first_domain: concepts_neural_network_in_graphical_representation;;
+Kohonen_concepts_layer => concepts_second_domain: number;;
+Kohonen_concepts_layer => concepts_definitional_domain:...
 	(*
-		<= nrel_combination:...
+		<= concepts_combination:...
 		(*
-			-> concept_neural_network_in_graphical_representation; number;;
+			-> concepts_neural_network_in_graphical_representation; number;;
 		*);;
 	*);;
-Kohonen_nrel_layer<-oriented_relation; antireflexive_relation; antitransitive_relation; antisymmetric_relation;;
-Kohonen_nrel_layer<-rrel_explored_concept: section_subject_domain_of_dimensional_neural_networks;;
-Kohonen_nrel_layer<-rrel_explored_concept: section_subject_domain_of_neural_networks_with_feedbacks;;
+Kohonen_concepts_layer<-oriented_relation; antireflexive_relation; antitransitive_relation; antisymmetric_relation;;
+Kohonen_concepts_layer<-rrel_explored_concepts: section_subject_domain_of_dimensional_neural_networks;;
+Kohonen_concepts_layer<-rrel_explored_concepts: section_subject_domain_of_neural_networks_with_feedbacks;;
 //done
+
+
 
 
 

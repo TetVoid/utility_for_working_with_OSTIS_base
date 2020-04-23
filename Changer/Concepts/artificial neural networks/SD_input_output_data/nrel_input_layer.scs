@@ -1,73 +1,75 @@
-nrel_input_nrel_layer
-=>nrel_main_idtf:
+concepts_input_concepts_layer
+=>concepts_main_idtf:
 	[входной слой*]
 	(* <- lang_ru;; *);
-	=>nrel_idtf:
+	=>concepts_idtf:
 	[распределительный слой*]
 	(* <- lang_ru;; *);
 	
 ///////////////////////////////////////////////////////////////////////////////
 	<-rrel_key_sc_element: 
-	Definition_of_input_nrel_layer
+	Definition_of_input_concepts_layer
 		(*
 			<-definition;;
-			<=nrel_sc_text_translation:...
+			<=concepts_sc_text_translation:...
 			(*
 				-> rrel_example:
 				[<p>				
 				<b>Входной слой*</b>  - <sc_element sys_idtf = "oriented_relation">ориентированное отношение</sc_element> ,
 				которое связывает множество <sc_element sys_idtf = "sc_arc_fuzzy_membership">дуг нечеткой принадлежности</sc_element> и 
-				первым доменом которого является <sc_element sys_idtf = "concept_neural_network_in_graphical_representation">нейронная сеть</sc_element>,
+				первым доменом которого является <sc_element sys_idtf = "concepts_neural_network_in_graphical_representation">нейронная сеть</sc_element>,
 				а вторым  –  множество нейронный узлов,  в котором все элементы  –  элементы входного слоя.
 				</p>] 
 				(*
 				<-lang_ru;;
-				=> nrel_format: format_html;;
+				=> concepts_format: format_html;;
 				*);;
 			*);;
-		=>nrel_main_idtf:[Опр. (входной слой*)](* <-lang_ru;; => nrel_format: format_html;;*);;
-		<=nrel_using_constants:...
+		=>concepts_main_idtf:[Опр. (входной слой*)](* <-lang_ru;; => concepts_format: format_html;;*);;
+		<=concepts_using_constants:...
 			(*
-				->oriented_relation;concept_neural_network_in_graphical_representation;concept_neuron_node;sc_arc_fuzzy_membership; input_nrel_layer;;
+				->oriented_relation;concepts_neural_network_in_graphical_representation;concepts_neuron_node;sc_arc_fuzzy_membership; input_concepts_layer;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	=>nrel_first_domain:concept_neural_network_in_graphical_representation;
-	=> nrel_second_domain:input_nrel_layer;
+	=>concepts_first_domain:concepts_neural_network_in_graphical_representation;
+	=> concepts_second_domain:input_concepts_layer;
 <- sc_node_norole_relation;
 <- oriented_relation;
 <- antireflexive_relation;
 <- antisymmetric_relation;
 <- antitransitive_relation;
-<-rrel_explored_concept:subject_domain_of_artificial_neural_networks;
+<-rrel_explored_concepts:subject_domain_of_artificial_neural_networks;
 
 ///////////////////////////////////////////////////////////////////
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (входной слой*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation:...
+	=> concepts_main_idtf: [Рис. (входной слой*)] (* <- lang_ru;;	*);;
+	<= concepts_sc_text_translation:...
 	(*
 		-> rrel_example: "file://images/nn.png"
 		(*
-			=> nrel_format: format_png;;
+			=> concepts_format: format_png;;
 		*);;
 	*);;
 *);
 //////////////////////////////////////////////////////////////////////
-<- rrel_key_sc_element: explanation_nrel_input_nrel_layer
+<- rrel_key_sc_element: explanation_concepts_input_concepts_layer
 (*
 	<- explanation;;
-	=> nrel_main_idtf: 
+	=> concepts_main_idtf: 
 		[Утв. (нейрон, входной слой, сигнал)](*<- lang_ru;;*);;
-	<= nrel_sc_text_translation:...
+	<= concepts_sc_text_translation:...
 	(*
 		-> rrel_example:[Нейроны входного слоя не выполняют обработку данных, а просто распределяют входной сигнал по нейронам следующего слоя.] (*<- lang_ru;;*);;
 	*);;
 *);;
-explanation_nrel_input_nrel_layer -> rrel_key_sc_element:euron_node;;
-explanation_nrel_input_nrel_layer -> rrel_key_sc_element:input_nrel_layer;;
-explanation_nrel_input_nrel_layer -> rrel_key_sc_element:signal;;
+explanation_concepts_input_concepts_layer -> rrel_key_sc_element:euron_node;;
+explanation_concepts_input_concepts_layer -> rrel_key_sc_element:input_concepts_layer;;
+explanation_concepts_input_concepts_layer -> rrel_key_sc_element:signal;;
+
+
 
 
 

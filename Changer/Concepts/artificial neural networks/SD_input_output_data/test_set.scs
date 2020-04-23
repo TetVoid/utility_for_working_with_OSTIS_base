@@ -1,32 +1,34 @@
-sc_node_norole_relation->nrel_test_set;;
-nrel_test_set=>nrel_main_idtf:[test set*](* <-lang_en;; *);;
-nrel_test_set=>nrel_main_idtf:[тестовая выборка*](* <-lang_ru;; *);;
+sc_node_norole_relation->concepts_test_set;;
+concepts_test_set=>concepts_main_idtf:[test set*](* <-lang_en;; *);;
+concepts_test_set=>concepts_main_idtf:[тестовая выборка*](* <-lang_ru;; *);;
  definition -> ...
 	(*
-		=> nrel_main_idtf: [Опр.(обучающая выборка*)](* <- lang_ru;; *);;
-		<= nrel_sc_text_translation:...
+		=> concepts_main_idtf: [Опр.(обучающая выборка*)](* <- lang_ru;; *);;
+		<= concepts_sc_text_translation:...
 		(*
 			-> rrel_example: [Обучающая выборка - множество нейронных узлов, в котором все элементы - элементы входного слоя и которое используется для корректировки весовых коэффициентов нейронной сети при обучении.](* <- lang_ru;; *);;
 		*);;
-		-> rrel_key_sc_element: nrel_test_set;;
-		<= nrel_using_constants :...
+		-> rrel_key_sc_element: concepts_test_set;;
+		<= concepts_using_constants :...
 		(*
-			-> concept_neuron_node; nrel_input_nrel_layer; nrel_synapse_weight;;//обучение
+			-> concepts_neuron_node; concepts_input_concepts_layer; concepts_synapse_weight;;//обучение
 		*);;
 	*);; 
-nrel_test_set=> nrel_first_domain: concept_neural_network_in_graphical_representation;;
-nrel_test_set=> nrel_second_domain:nrel_input_nrel_layer;;
-nrel_test_set=> nrel_definitional_domain:...
+concepts_test_set=> concepts_first_domain: concepts_neural_network_in_graphical_representation;;
+concepts_test_set=> concepts_second_domain:concepts_input_concepts_layer;;
+concepts_test_set=> concepts_definitional_domain:...
 	(*
-		<= nrel_combination:...
+		<= concepts_combination:...
 		(*
-			-> concept_neural_network_in_graphical_representation; nrel_input_nrel_layer;;
+			-> concepts_neural_network_in_graphical_representation; concepts_input_concepts_layer;;
 		*);;
 	*);;
-nrel_test_set<-oriented_relation; antireflexive_relation; antitransitive_relation; antisymmetric_relation;;
-//nrel_test_set<-rrel_explored_concept: section_subject_domain_of_single_layer_neural_networks;;
+concepts_test_set<-oriented_relation; antireflexive_relation; antitransitive_relation; antisymmetric_relation;;
+//concepts_test_set<-rrel_explored_concepts: section_subject_domain_of_single_layer_neural_networks;;
 
 //сделано
+
+
 
 
 

@@ -1,5 +1,5 @@
 ﻿  Changer.cpp
 c:\users\asus-pc\desktop\labi\mois 4 sem\changer\changer\changer.cpp(45): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\asus-pc\desktop\labi\mois 4 sem\changer\changer\changer.cpp(62): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus-pc\desktop\labi\mois 4 sem\changer\changer\changer.cpp(65): warning C4018: <: несоответствие типов со знаком и без знака
   AssemblyInfo.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   Changer.vcxproj -> C:\Users\ASUS-PC\Desktop\labi\mois 4 sem\Changer\Debug\Changer.exe

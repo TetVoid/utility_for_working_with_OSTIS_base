@@ -1,21 +1,21 @@
 word_network<-sc_node_not_relation;;
 
-word_network=>nrel_main_idtf:
+word_network=>concepts_main_idtf:
 [сеть Ворда](*<-lang_ru;;*);
 [word network](*<-lang_en;;*);;
 
 word_network<- rrel_key_sc_element: ...
 (*
 <- definition;;
-=> nrel_main_idtf:
+=> concepts_main_idtf:
       [Опр. (сеть Ворда)] (* <- lang_ru;; *);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 	{
 		topology;
-		nrel_layer;
+		concepts_layer;
 		neuron
 	};; 
-<= nrel_sc_text_translation: ... 
+<= concepts_sc_text_translation: ... 
 		(*
 			->rrel_example:
 			[Сеть Ворда - искусственная нейронная сеть, топология которой характеризуется тем, что внутренние (скрытые) слои нейронов разбиты на блоки.](*<- lang_ru;;*);;
@@ -25,19 +25,21 @@ word_network<- rrel_key_sc_element: ...
 
 word_network<- rrel_key_sc_element: ... 
 (*
- => nrel_main_idtf:
+ => concepts_main_idtf:
 [Утв. 1 об сети Ворда] (* <- lang_ru;; *);;
- <= nrel_sc_text_translation: ...
+ <= concepts_sc_text_translation: ...
 	 (*
     	  -> rrel_example:
 		[Нейронные сети Ворда различаются количеством блоков скрытого слоя и наличием или отсутствием обходных соединений.](*<-lang_ru;;*);;
 	*);;
-=> nrel_using_constants: 
+=> concepts_using_constants: 
 {
-nrel_layer;
+concepts_layer;
 blok
 };;
 *);;
+
+
 
 
 

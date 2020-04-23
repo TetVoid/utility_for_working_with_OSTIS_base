@@ -1,5 +1,5 @@
 subject_domain_of_single_layer_neural_networks
-	=> nrel_main_idtf:
+	=> concepts_main_idtf:
 	[Предметная область однослойных нейронных сетей]
 	(* <- lang_ru;; *);
 	[Subject domain of single layer neural networks]
@@ -11,9 +11,11 @@ subject_domain_of_single_layer_neural_networks
 	
 single_layer_neural_network
 	<- sc_node_not_relation;
-	=>nrel_main_idtf:
+	=>concepts_main_idtf:
 	[однослойная нейронная сеть]
 	(* <- lang_ru;;*);
 	[single-layer neural network]
 	(* <- lang_en;; *);;
+
+
 

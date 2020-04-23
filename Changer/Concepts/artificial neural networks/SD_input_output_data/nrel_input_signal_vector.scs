@@ -1,20 +1,20 @@
-nrel_input_signal_vector
+concepts_input_signal_vector
 	<- sc_node_norole_relation;
-	=> nrel_main_idtf: [input signal vector*] (* <- lang_en;; *);
-	=> nrel_main_idtf: [вектор входного сигнала*] (* <- lang_ru;; *);;
+	=> concepts_main_idtf: [input signal vector*] (* <- lang_en;; *);
+	=> concepts_main_idtf: [вектор входного сигнала*] (* <- lang_ru;; *);;
 
 
-nrel_input_signal_vector => nrel_definitional_domain: ...
+concepts_input_signal_vector => concepts_definitional_domain: ...
 	(*
-		<= nrel_combination: ...
+		<= concepts_combination: ...
 			(*
-				-> concept_neural_network_in_graphical_representation (* <= nrel_first_domain: nrel_input_signal_vector;; *);;
-				-> vector (* <= nrel_second_domain: nrel_input_signal_vector;; *);;
+				-> concepts_neural_network_in_graphical_representation (* <= concepts_first_domain: concepts_input_signal_vector;; *);;
+				-> vector (* <= concepts_second_domain: concepts_input_signal_vector;; *);;
 			*);;
 	*);;
 
 
-nrel_input_signal_vector
+concepts_input_signal_vector
 	<- binary_relation;
 	<- oriented_relation;
 	<- antireflexive_relation;
@@ -24,18 +24,18 @@ nrel_input_signal_vector
 
 definition -> ...
 	(*
-		=> nrel_main_idtf: [Опр.(вектор входного сигнала*)] (* <-lang_ru;; *);;
-		-> rrel_key_sc_element: nrel_input_signal_vector;;
+		=> concepts_main_idtf: [Опр.(вектор входного сигнала*)] (* <-lang_ru;; *);;
+		-> rrel_key_sc_element: concepts_input_signal_vector;;
 
-		<= nrel_using_constants: ...
+		<= concepts_using_constants: ...
 			(*
 				-> vector;;
-				-> concept_neuron_node;;
-				-> input_nrel_layer;;
-				-> concept_neural_network_in_graphical_representation;;
+				-> concepts_neuron_node;;
+				-> input_concepts_layer;;
+				-> concepts_neural_network_in_graphical_representation;;
 			*);;
 
-		<= nrel_sc_text_translation: ...
+		<= concepts_sc_text_translation: ...
 			(*
 				-> [Вектором входного сигнала нейронной сети называется векториз n координат, где n - количество нейронных узлов на входном слое, а i-ая (i = 1,2,3,...,n) из координат подается на вход i-ому нейронному узлу данного слоя] (* <- lang_ru;; *);;
 			*);;
@@ -44,15 +44,17 @@ definition -> ...
 
 affirmation -> ...
 	(*
-		-> rrel_key_sc_element: nrel_input_signal_vector;;
+		-> rrel_key_sc_element: concepts_input_signal_vector;;
 
-		<= nrel_sc_text_translation: ...
+		<= concepts_sc_text_translation: ...
 			(*
 				-> [Вектор входного сигнала эквивалентен матрице весовых коэффициентов входного слоя] (* <- lang_ru;; *);;
 			*);;
 
-		=> nrel_main_idtf: [Утв.(вектор входного сигнала*, эквиваленция*, матрица весовых коэффициентов*, входной слой*)] (* <- lang_ru;; *);;
+		=> concepts_main_idtf: [Утв.(вектор входного сигнала*, эквиваленция*, матрица весовых коэффициентов*, входной слой*)] (* <- lang_ru;; *);;
 	*);;
+
+
 
 
 

@@ -1,5 +1,5 @@
 subject_domain_of_real_numerical_neural_networks
-=> nrel_main_idtf: 
+=> concepts_main_idtf: 
 	[Предметная область вещественно-численных нейронных сетей]
 	(* <- lang_ru;;*);
 	[Subject domain of real-numerical neural networks]
@@ -12,10 +12,12 @@ subject_domain_of_real_numerical_neural_networks
 	
 real_numerical_neural_network
 	<- sc_node_not_relation;
-	=>nrel_main_idtf:
+	=>concepts_main_idtf:
 	[вещественно-численная нейронная сеть]
 	(* <- lang_ru;;*);
 	[real-numerical neural network]
 	(* <- lang_en;; *);;
+
+
 
 

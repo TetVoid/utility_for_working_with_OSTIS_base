@@ -1,5 +1,5 @@
 Hamming_neural_network
-	=>nrel_main_idtf:
+	=>concepts_main_idtf:
 	[сеть Хэмминга]
 	(* <- lang_ru;; *);
 	[нейронная сеть Хэмминга]
@@ -10,7 +10,7 @@ Hamming_neural_network
 	Definition_of_Hamming_neural_network
 		(*
 			<-definition;;
-			<=nrel_sc_text_translation:...
+			<=concepts_sc_text_translation:...
 			(*
 				-> rrel_example:
 				[<p>				
@@ -21,23 +21,23 @@ Hamming_neural_network
 				</p>] 
 				(*
 				<-lang_ru;;
-				=> nrel_format: format_html;;
+				=> concepts_format: format_html;;
 				*);;
 			*);;
-		=>nrel_main_idtf:[Опр. (сеть Хэмминга)](* <-lang_ru;; => nrel_format: format_html;;*);;
-		<=nrel_using_constants:...
+		=>concepts_main_idtf:[Опр. (сеть Хэмминга)](* <-lang_ru;; => concepts_format: format_html;;*);;
+		<=concepts_using_constants:...
 			(*
 				->pattern_recognition;relaxation_parameter;Hamming_distance;fixed_connection;feedback;; 
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 <-parameter_relaxation;
-<-concept_state_of_equilibrium;
+<-concepts_state_of_equilibrium;
 <=inclusion: two_valued_neural_network;heterogeneous_neural_network;
 			 neural_networks_without_contextual_neurons; neural_networks_with_feedbacks;
 			 neural_networks_with_hidden_neurons;multilayer_neural_network;
 			 deterministic_neural_network;relaxed_neural_network;
-<-rrel_explored_concept:
+<-rrel_explored_concepts:
 						subject_domain_of_two_valued_neural_networks;
 						subject_domain_of_heterogeneous_neural_networks;
 						subject_domain_of_neural_networks_without_contextual_neurons; 
@@ -51,15 +51,17 @@ Hamming_neural_network
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (пример нейронной сети Хэмминга)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation:...
+	=> concepts_main_idtf: [Рис. (пример нейронной сети Хэмминга)] (* <- lang_ru;;	*);;
+	<= concepts_sc_text_translation:...
 	(*
 		-> rrel_example: "file://images/example_Haming_nn.bmp"
 		(*
-			=> nrel_format: format_png;;
+			=> concepts_format: format_png;;
 		*);;
 	*);;
 *);;
+
+
 
 
 

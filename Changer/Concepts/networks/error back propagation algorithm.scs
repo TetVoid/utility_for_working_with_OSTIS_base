@@ -7,21 +7,21 @@ sc_node_not_relation->direct_distribution_neural_network;;
 sc_node_not_relation->algorithm;; 
 sc_node_not_relation->algorithm_x;; 
 
-sc_node_norole_relation->nrel_weight;;
+sc_node_norole_relation->concepts_weight;;
 
 
-error_back_propagation_algorithm=> nrel_main_idtf: [Алгоритм обратного распространения ошибки ](* <- lang_ru;; *);;
-error_back_propagation_algorithm=> nrel_main_idtf: [error back propagation algorithm](* <- lang_en;; *);;
+error_back_propagation_algorithm=> concepts_main_idtf: [Алгоритм обратного распространения ошибки ](* <- lang_ru;; *);;
+error_back_propagation_algorithm=> concepts_main_idtf: [error back propagation algorithm](* <- lang_en;; *);;
 definition ->...
 (*
 ->rrel_key_sc_element: error_back_propagation_algorithm;;
-<= nrel_sc_text_translation: ...(*->rrel_example:[Алгоритм обратного распространения ошибки  — метод вычисления градиента, который используется при обновлении весов многослойного перцептрона.](*<-lang_ru;;*);;*);;
-=> nrel_main_idtf: [Определение (Алгоритм обратного распространения ошибки)](*<- lang_ru;;*);;
-=> nrel_using_constants:
+<= concepts_sc_text_translation: ...(*->rrel_example:[Алгоритм обратного распространения ошибки  — метод вычисления градиента, который используется при обновлении весов многослойного перцептрона.](*<-lang_ru;;*);;*);;
+=> concepts_main_idtf: [Определение (Алгоритм обратного распространения ошибки)](*<- lang_ru;;*);;
+=> concepts_using_constants:
 { 
  gradient;
  calculation_method;
-nrel_weight;
+concepts_weight;
 multilayer_perceptron
 };;
 *);; 
@@ -29,16 +29,18 @@ multilayer_perceptron
 statement ->...
 (*
 ->rrel_key_sc_element: error_back_propagation_algorithm;;
-<= nrel_sc_text_translation: ...(*->rrel_example:[Алгоритм обратного распространения ошибки изпользуется для обучения плоскослоистых нейронных сетей прямого распространения.](*<-lang_ru;;*);;*);;
-=> nrel_main_idtf: [Утверждение(Алгоритм обратного распространения ошибки)](*<- lang_ru;;*);;
-=> nrel_using_constants:
+<= concepts_sc_text_translation: ...(*->rrel_example:[Алгоритм обратного распространения ошибки изпользуется для обучения плоскослоистых нейронных сетей прямого распространения.](*<-lang_ru;;*);;*);;
+=> concepts_main_idtf: [Утверждение(Алгоритм обратного распространения ошибки)](*<- lang_ru;;*);;
+=> concepts_using_constants:
 {
 learning_process;
 direct_distribution_neural_network
 };;
 *);;
 algorithm_x<-rrel_example:error_back_propagation_algorithm;;
-error_back_propagation_algorithm<=nrel_inclusion:algorithm;;
+error_back_propagation_algorithm<=concepts_inclusion:algorithm;;
+
+
 
 
 

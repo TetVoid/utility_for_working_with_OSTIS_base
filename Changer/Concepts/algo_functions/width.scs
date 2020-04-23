@@ -1,5 +1,5 @@
-sc_node_norole_relation->nrel_radial_bases_function_width;;
-sc_node_norole_relation->nrel_define;;
+sc_node_norole_relation->concepts_radial_bases_function_width;;
+sc_node_norole_relation->concepts_define;;
 
 sc_node_not_relation->neuron;;
 sc_node_not_relation->width;;
@@ -9,14 +9,14 @@ sc_node_not_relation->function;;
 
 
 
-nrel_radial_bases_function_width=> nrel_main_idtf: [ширина радиально базисной функции*](*<- lang_ru;;*);;
-nrel_radial_bases_function_width=> nrel_main_idtf: [radial bases function width*](*<- lang_en;;*);;
+concepts_radial_bases_function_width=> concepts_main_idtf: [ширина радиально базисной функции*](*<- lang_ru;;*);;
+concepts_radial_bases_function_width=> concepts_main_idtf: [radial bases function width*](*<- lang_en;;*);;
 definition ->... 
 (*
-->rrel_key_sc_element: nrel_radial_bases_function_width;;
-<= nrel_sc_text_translation: ...(*->rrel_example:[Ширина радиально базисной функции - ширина нейрона в радиально базисных нейронных сетях.](*<-lang_ru;;*);;*);;
-=> nrel_main_idtf: [Определение (ширина радиально базисной функции*)](*<- lang_ru;;*);;
-=> nrel_using_constants:
+->rrel_key_sc_element: concepts_radial_bases_function_width;;
+<= concepts_sc_text_translation: ...(*->rrel_example:[Ширина радиально базисной функции - ширина нейрона в радиально базисных нейронных сетях.](*<-lang_ru;;*);;*);;
+=> concepts_main_idtf: [Определение (ширина радиально базисной функции*)](*<- lang_ru;;*);;
+=> concepts_using_constants:
 {
 neuron;
 width;
@@ -26,44 +26,46 @@ radial_bases_neural_network
 
 statement ->...
 (*
-->rrel_key_sc_element:nrel_radial_bases_function_width;;
-<= nrel_sc_text_translation: ...(*->rrel_example:[Ширина опрделяется в процессе обучения.](*<-lang_ru;;*);;*);;
-=> nrel_main_idtf: [Утверждение(ширина радиально базисной функции*)](*<- lang_ru;;*);;
-=> nrel_using_constants:
+->rrel_key_sc_element:concepts_radial_bases_function_width;;
+<= concepts_sc_text_translation: ...(*->rrel_example:[Ширина опрделяется в процессе обучения.](*<-lang_ru;;*);;*);;
+=> concepts_main_idtf: [Утверждение(ширина радиально базисной функции*)](*<- lang_ru;;*);;
+=> concepts_using_constants:
 { 
 learning_process;
-nrel_define
+concepts_define
 };;
 *);;
 
 
-relation => nrel_inclusion: oriented_relation;; 
-relation => nrel_inclusion: binary_relation;;
-oriented_relation -> nrel_radial_bases_function_width;;
-binary_relation => nrel_inclusion: antireflexive_relation;;
-binary_relation => nrel_inclusion: antitransitive_relation;;
-binary_relation => nrel_inclusion: antisymmetric_relation;; 
-antireflexive_relation -> nrel_radial_bases_function_width;; 
-antitransitive_relation -> nrel_radial_bases_function_width;;
-antisymmetric_relation -> nrel_radial_bases_function_width;;
+relation => concepts_inclusion: oriented_relation;; 
+relation => concepts_inclusion: binary_relation;;
+oriented_relation -> concepts_radial_bases_function_width;;
+binary_relation => concepts_inclusion: antireflexive_relation;;
+binary_relation => concepts_inclusion: antitransitive_relation;;
+binary_relation => concepts_inclusion: antisymmetric_relation;; 
+antireflexive_relation -> concepts_radial_bases_function_width;; 
+antitransitive_relation -> concepts_radial_bases_function_width;;
+antisymmetric_relation -> concepts_radial_bases_function_width;;
 
 
-nrel_radial_bases_function_width => nrel_first_domain:function;;
-nrel_radial_bases_function_width => nrel_second_domain: number;;
-..union<=nrel_combination:
+concepts_radial_bases_function_width => concepts_first_domain:function;;
+concepts_radial_bases_function_width => concepts_second_domain: number;;
+..union<=concepts_combination:
 {
 function;
 number
 };;
-nrel_radial_bases_function_width => nrel_definitional_domain:..union;; 
+concepts_radial_bases_function_width => concepts_definitional_domain:..union;; 
 
 arity->arity_2;;
-arity_2=>nrel_measurement:2;;
-arity_2->nrel_radial_bases_function_width;;
+arity_2=>concepts_measurement:2;;
+arity_2->concepts_radial_bases_function_width;;
 number->2;;
 
-function=>nrel_radial_bases_function_width:0.3;;
+function=>concepts_radial_bases_function_width:0.3;;
 number->0.3;;
+
+
 
 
 

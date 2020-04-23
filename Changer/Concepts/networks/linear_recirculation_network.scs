@@ -1,8 +1,8 @@
 linear_recirculation_network
-	=>nrel_main_idtf:
+	=>concepts_main_idtf:
 	[линейная рециркуляционная сеть]
 	(* <- lang_ru;; *);
-	=> nrel_idtf:
+	=> concepts_idtf:
 	[линейная рециркуляционная нейронная сеть]
 	(* <- lang_ru;; *);
 	
@@ -11,7 +11,7 @@ linear_recirculation_network
 	Definition_of_linear_recirculation_network
 		(*
 			<-definition;;
-			<=nrel_sc_text_translation:...
+			<=concepts_sc_text_translation:...
 			(*
 				-> rrel_example:
 				[<p>				
@@ -22,24 +22,24 @@ linear_recirculation_network
 				</p>] 
 				(*
 				<-lang_ru;;
-				=> nrel_format: format_html;;
+				=> concepts_format: format_html;;
 				*);;
 			*);;
-		=>nrel_main_idtf:[Опр. (линейная рециркуляционная сеть)](* <-lang_ru;; => nrel_format: format_html;;*);;
-		<=nrel_using_constants:...
+		=>concepts_main_idtf:[Опр. (линейная рециркуляционная сеть)](* <-lang_ru;; => concepts_format: format_html;;*);;
+		<=concepts_using_constants:...
 			(*
 				->pattern_recognition;bidirectional_communication;compression;recovery;; //+без учителя
 			*);;
 		*);
 		
-=>nrel_inclusion:linear_recirculation_network_for_restoring;
-=>nrel_inclusion:linear_recirculation_network_for_compression;
+=>concepts_inclusion:linear_recirculation_network_for_restoring;
+=>concepts_inclusion:linear_recirculation_network_for_compression;
 <=inclusion: homogeneous_neural_network;
 			 neural_networks_without_contextual_neurons; 
 			 neural_networks_without_hidden_neurons;multilayer_neural_network;
 			 deterministic_neural_network;
 			 
-<-rrel_explored_concept:
+<-rrel_explored_concepts:
 						subject_domain_of_homogeneous_neural_networks;
 						subject_domain_of_neural_networks_without_hidden_neurons;
 						subject_domain_of_neural_networks_with_feedbacks;
@@ -51,15 +51,17 @@ linear_recirculation_network
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (Пример линейной рециркуляционной сети)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation:...
+	=> concepts_main_idtf: [Рис. (Пример линейной рециркуляционной сети)] (* <- lang_ru;;	*);;
+	<= concepts_sc_text_translation:...
 	(*
 		-> rrel_example: "file://images/example_recirculation_nn.png"
 		(*
-			=> nrel_format: format_png;;
+			=> concepts_format: format_png;;
 		*);;
 	*);;
 *);;
+
+
 
 
 

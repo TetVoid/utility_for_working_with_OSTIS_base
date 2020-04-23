@@ -1,19 +1,19 @@
-nrel_function_minimization
+concepts_function_minimization
 	<- sc_node_norole_relation;
-	=> nrel_main_idtf: [минимизация функции*] (* <- lang_ru;; *);
-	=> nrel_main_idtf: [function minimization] (* <- lang_en;; *);;
+	=> concepts_main_idtf: [минимизация функции*] (* <- lang_ru;; *);
+	=> concepts_main_idtf: [function minimization] (* <- lang_en;; *);;
 
-nrel_function_minimization => nrel_definitional_domain: ...
+concepts_function_minimization => concepts_definitional_domain: ...
 	(*
-		<= nrel_combination: ...
+		<= concepts_combination: ...
 			(*
-				-> function (* <= nrel_first_domain: nrel_function_minimization;; *);;
-				-> number (* <= nrel_second_domain: nrel_function_minimization;; *);;
+				-> function (* <= concepts_first_domain: concepts_function_minimization;; *);;
+				-> number (* <= concepts_second_domain: concepts_function_minimization;; *);;
 			*);;
 	*);;
 
 
-nrel_function_minimization
+concepts_function_minimization
 	<- binary_relation;
 	<- oriented_relation;
 	<- antireflexive_relation;
@@ -23,21 +23,23 @@ nrel_function_minimization
 
 definition -> ...
 	(*
-		=> nrel_main_idtf: [Опр.(минимизация функции*)] (* <-lang_ru;; *);;
-		-> rrel_key_sc_element: nrel_function_minimization;;
+		=> concepts_main_idtf: [Опр.(минимизация функции*)] (* <-lang_ru;; *);;
+		-> rrel_key_sc_element: concepts_function_minimization;;
 
-		<= nrel_using_constants: ...
+		<= concepts_using_constants: ...
 			(*
 				-> function;;
-				-> nrel_function_minimum (* => nrel_main_idtf: [минимум функции*] (* <- lang_ru;; *);; *);;
+				-> concepts_function_minimum (* => concepts_main_idtf: [минимум функции*] (* <- lang_ru;; *);; *);;
 				-> set;;
 			*);;
 
-		<= nrel_sc_text_translation: ...
+		<= concepts_sc_text_translation: ...
 			(*
 				->[Максимизацией функции конечного числа переменных называется процесс поиска минимума функции на заданном множестве] (* <- lang_ru;; *);;
 			*);;
 	*);;
+
+
 
 
 

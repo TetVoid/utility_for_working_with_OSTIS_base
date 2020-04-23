@@ -1,20 +1,20 @@
-nrel_classification_result
+concepts_classification_result
 	<- sc_node_norole_relation;
-	=> nrel_main_idtf: [classification result*] (* <- lang_en;; *);
-	=> nrel_main_idtf: [результат классификации*] (* <- lang_ru;; *);;
+	=> concepts_main_idtf: [classification result*] (* <- lang_en;; *);
+	=> concepts_main_idtf: [результат классификации*] (* <- lang_ru;; *);;
 
 
-nrel_classification_result => nrel_definitional_domain: ...
+concepts_classification_result => concepts_definitional_domain: ...
 	(*
-		<= nrel_combination: ...
+		<= concepts_combination: ...
 			(*
-				-> decision_tree_node (* <= nrel_first_domain: nrel_classification_result;; *);;
-				-> set (* <= nrel_second_domain: nrel_classification_result;; *);;
+				-> decision_tree_node (* <= concepts_first_domain: concepts_classification_result;; *);;
+				-> set (* <= concepts_second_domain: concepts_classification_result;; *);;
 			*);;
 	*);;
 
 
-nrel_classification_result
+concepts_classification_result
 	<- binary_relation;
 	<- oriented_relation;
 	<- antireflexive_relation;
@@ -24,17 +24,17 @@ nrel_classification_result
 
 definition -> ...
 	(*
-		=> nrel_main_idtf: [Опр.(результат классификации*)] (* <-lang_ru;; *);;
-		-> rrel_key_sc_element: nrel_classification_result;;
+		=> concepts_main_idtf: [Опр.(результат классификации*)] (* <-lang_ru;; *);;
+		-> rrel_key_sc_element: concepts_classification_result;;
 
-		<= nrel_using_constants: ...
+		<= concepts_using_constants: ...
 			(*
 				-> set;;
 				-> binary_relation;;	
 				-> decision_tree_node;;
 			*);;
 
-		<= nrel_sc_text_translation: ...
+		<= concepts_sc_text_translation: ...
 			(*
 				->[Результатом классификации называется бинарное отношение, первым доменом которого является узел дерева решений, а вторым - множество, которому принадлежит объект, полученный в результате классификации] (* <- lang_ru;; *);;
 			*);;
@@ -43,20 +43,22 @@ definition -> ...
 
 affirmation -> ...
 	(*
-		-> rrel_key_sc_element: nrel_classification_result;;
+		-> rrel_key_sc_element: concepts_classification_result;;
 
-		<= nrel_sc_text_translation: ...
+		<= concepts_sc_text_translation: ...
 			(*
 				-> [Результат классификации нейронной сети будет верен только в том случае, если если она обучена на распознавание объектов поданного на вход класса] (* <- lang_ru;; *);;
 			*);;
 
-		=> nrel_main_idtf: [Утв.(результат классификации*, нейронная сеть, класс)] (* <- lang_ru;; *);;
+		=> concepts_main_idtf: [Утв.(результат классификации*, нейронная сеть, класс)] (* <- lang_ru;; *);;
 	*);;
 
-nrel_classification_result -> rrel_example: (Node_A => Ellipse_E);;
+concepts_classification_result -> rrel_example: (Node_A => Ellipse_E);;
 
 Node_A <- decision_tree_node;;
-Ellipse_E <- ellipse (* <- sc_node_not_relation;; => nrel_main_idtf: [эллипс] (* <- lang_ru;; *);; *);;
+Ellipse_E <- ellipse (* <- sc_node_not_relation;; => concepts_main_idtf: [эллипс] (* <- lang_ru;; *);; *);;
+
+
 
 
 
